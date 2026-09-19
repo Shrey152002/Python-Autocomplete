@@ -1,0 +1,31 @@
+{
+  "samples": {
+    "mnist_main": {
+      "source_file": "real_samples/mnist_main.py",
+      "source_url": "https://raw.githubusercontent.com/pytorch/examples/main/mnist/main.py",
+      "license": "BSD-3-Clause (pytorch/examples)",
+      "accuracy_approx": 0.829,
+      "accuracy_note": "Rounded to 1 decimal as printed by the run's log line (accuracy=82.9%). The script was stopped before it reached its own json.dump() call, so the exact unrounded float and exact correct_chars integer were never captured.",
+      "key_strokes": 1477,
+      "length": 5391,
+      "time_seconds": 5499.1
+    },
+    "nanogpt_model": {
+      "source_file": "real_samples/nanogpt_model_trimmed.py",
+      "source_url": "https://raw.githubusercontent.com/karpathy/nanoGPT/master/model.py",
+      "license": "MIT (karpathy/nanoGPT)",
+      "accuracy": 0.626077957916523,
+      "correct_chars": 1815,
+      "key_strokes": 1345,
+      "length": 2899,
+      "time_seconds": 1421.689198255539
+    }
+  },
+  "summary": {
+    "overall_weighted_accuracy_approx": 0.756,
+    "note_on_precision": "mnist_main's accuracy is only known to 1 decimal (82.9%) since that run was stopped before it wrote exact figures; nanogpt_model's figures are exact. The weighted accuracy above uses mnist_main's rounded value, so treat it as approximate (±~0.5%).",
+    "total_length_evaluated": 8290,
+    "total_time_seconds": 6920.8,
+    "finding": "Both runs showed a clear progressive slowdown within the same process: nanogpt_model averaged ~0.15s/call for the first ~600 predict calls, then degraded to ~1-2s/call (and spikes over 4s/call) for the remainder — not explained by prediction difficulty. Likely a memory/state accumulation issue in the predictor across many sequential calls in one long-lived process, rather than anything about the model's accuracy itself."
+  }
+}

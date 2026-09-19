@@ -14,3 +14,4 @@ einops
 build
 dist
 *.tar.gz
+.mcp.json

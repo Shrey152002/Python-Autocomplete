@@ -1,0 +1,31 @@
+{
+  "tiers": {
+    "easy": {
+      "accuracy": 0.55,
+      "correct_chars": 154,
+      "key_strokes": 151,
+      "length": 280,
+      "time_seconds": 19.895429849624634
+    },
+    "medium": {
+      "accuracy": 0.8741573033707866,
+      "correct_chars": 778,
+      "key_strokes": 211,
+      "length": 890,
+      "time_seconds": 39.08625674247742
+    },
+    "hard": {
+      "accuracy": 0.6392156862745098,
+      "correct_chars": 489,
+      "key_strokes": 332,
+      "length": 765,
+      "time_seconds": 50.08099961280823
+    }
+  },
+  "summary": {
+    "overall_weighted_accuracy": 0.7343669250645994,
+    "overall_simple_average_accuracy": 0.6877909965484322,
+    "total_length": 1935,
+    "total_time_seconds": 109.06268620491028
+  }
+}

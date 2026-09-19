@@ -1,0 +1,22 @@
+[
+  {"prompt": "import numpy as ", "expected": "np"},
+  {"prompt": "import pandas as ", "expected": "pd"},
+  {"prompt": "import torch\nimport torch.nn as ", "expected": "nn"},
+  {"prompt": "from torch.utils.data import ", "expected": "DataLoader"},
+  {"prompt": "class Net(nn.", "expected": "Module"},
+  {"prompt": "def __init__(self", "expected": "):"},
+  {"prompt": "    def forward(self, x):\n        return self.", "expected": "fc"},
+  {"prompt": "model = torch.nn.", "expected": "Linear"},
+  {"prompt": "optimizer = torch.optim.", "expected": "Adam"},
+  {"prompt": "for epoch in range(", "expected": "num_epochs"},
+  {"prompt": "    for i, (images, labels) in enumerate(", "expected": "train_loader"},
+  {"prompt": "loss = criterion(outputs, ", "expected": "labels"},
+  {"prompt": "optimizer.zero_", "expected": "grad()"},
+  {"prompt": "loss.", "expected": "backward()"},
+  {"prompt": "optimizer.", "expected": "step()"},
+  {"prompt": "device = torch.device('cuda' if torch.cuda.is_available() else '", "expected": "cpu"},
+  {"prompt": "with open('data.txt', '", "expected": "r"},
+  {"prompt": "if __name__ == '__main__':\n    ", "expected": "main()"},
+  {"prompt": "arr = np.array([1, 2, 3])\nprint(arr.", "expected": "shape"},
+  {"prompt": "df = pd.read_", "expected": "csv"}
+]

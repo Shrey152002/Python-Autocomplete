@@ -1,0 +1,10 @@
+{
+  "source_file": "real_samples/nanogpt_model_trimmed.py",
+  "source_url": "https://raw.githubusercontent.com/karpathy/nanoGPT/master/model.py",
+  "license": "MIT (karpathy/nanoGPT)",
+  "accuracy": 0.626077957916523,
+  "correct_chars": 1815,
+  "key_strokes": 1345,
+  "length": 2899,
+  "time_seconds": 1421.689198255539
+}

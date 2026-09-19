@@ -1,0 +1,322 @@
+{
+  "summary": {
+    "total_cases": 20,
+    "errors": 0,
+    "top1_accuracy": 0.4,
+    "top5_accuracy": 0.45,
+    "total_time_seconds": 4.299816608428955,
+    "avg_time_per_request_seconds": 0.21490379571914672
+  },
+  "results": [
+    {
+      "prompt": "import numpy as ",
+      "expected": "np",
+      "predictions": [
+        "np\nnp.random.seed"
+      ],
+      "probs": [
+        0.00761600552266546
+      ],
+      "time_seconds": 0.42536139488220215,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "import pandas as ",
+      "expected": "pd",
+      "predictions": [
+        "pandas.\n\n    pandas"
+      ],
+      "probs": [
+        0.005480722051265039
+      ],
+      "time_seconds": 0.38526248931884766,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "import torch\nimport torch.nn as ",
+      "expected": "nn",
+      "predictions": [
+        "nn\nimport torch",
+        "nn\n\nfrom torch."
+      ],
+      "probs": [
+        0.6422356309447007,
+        0.012112198264150909
+      ],
+      "time_seconds": 0.27373528480529785,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "from torch.utils.data import ",
+      "expected": "DataLoader",
+      "predictions": [
+        "DataLoader\nfrom",
+        "TensorDataset\n\n\n",
+        "TensorDataset\nfrom",
+        "DataLoader, TensorDataset",
+        "TensorDataset, "
+      ],
+      "probs": [
+        0.08360649447824225,
+        0.0585610009000878,
+        0.05647357338517418,
+        0.05549989209931432,
+        0.05377686160668672
+      ],
+      "time_seconds": 0.25370001792907715,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "class Net(nn.",
+      "expected": "Module",
+      "predictions": [
+        "Module)):\n        ",
+        "Module):\n        "
+      ],
+      "probs": [
+        0.38922614308133846,
+        0.14345691603838717
+      ],
+      "time_seconds": 0.1634073257446289,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "def __init__(self",
+      "expected": "):",
+      "predictions": [
+        "):\n        return",
+        "):\n            ",
+        "):\n        self",
+        "):\n                "
+      ],
+      "probs": [
+        0.0041252368952528415,
+        0.0037662757142881884,
+        0.003220707560961889,
+        0.0014652112326765804
+      ],
+      "time_seconds": 0.10928106307983398,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "    def forward(self, x):\n        return self.",
+      "expected": "fc",
+      "predictions": [
+        "forward(x)\n\n\nclass",
+        "forward(x)\n\n    ",
+        "forward(x)\n\nclass",
+        "forward(self.forward",
+        "forward(x)\n\n# PROJECT"
+      ],
+      "probs": [
+        0.10919547451574961,
+        0.08387697398360598,
+        0.06426934380646684,
+        0.05796411551662312,
+        0.051860661946586055
+      ],
+      "time_seconds": 0.1799321174621582,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "model = torch.nn.",
+      "expected": "Linear",
+      "predictions": [
+        "Sequential(\n            "
+      ],
+      "probs": [
+        0.04820089738311743
+      ],
+      "time_seconds": 0.28652000427246094,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "optimizer = torch.optim.",
+      "expected": "Adam",
+      "predictions": [
+        "Adam, lr=lr)\n        "
+      ],
+      "probs": [
+        0.000863758059156798
+      ],
+      "time_seconds": 0.2552144527435303,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "for epoch in range(",
+      "expected": "num_epochs",
+      "predictions": [
+        "start_epoch, end_epoch",
+        "train(train(train",
+        "start_epoch, epoch",
+        "start_epoch(epoch",
+        "\n                "
+      ],
+      "probs": [
+        0.03576313394742063,
+        0.010094109115673686,
+        0.008141471352614086,
+        0.005856303856924644,
+        0.0013281096471473575
+      ],
+      "time_seconds": 0.2634739875793457,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "    for i, (images, labels) in enumerate(",
+      "expected": "train_loader",
+      "predictions": [
+        "zip(images, labels",
+        "enumerate(images",
+        "images):\n        ",
+        "images)):\n        ",
+        "zip(labels, labels"
+      ],
+      "probs": [
+        0.4884183023862967,
+        0.035267185880168715,
+        0.0243111344129667,
+        0.019052536979844912,
+        0.018141740181511937
+      ],
+      "time_seconds": 0.24686002731323242,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "loss = criterion(outputs, ",
+      "expected": "labels",
+      "predictions": [
+        "labels, labels, ",
+        "labels), criterion",
+        "labels)\n    )\n    "
+      ],
+      "probs": [
+        0.008748649663287651,
+        0.0009211667663193829,
+        0.0009041657817995926
+      ],
+      "time_seconds": 0.2732417583465576,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "optimizer.zero_",
+      "expected": "grad()",
+      "predictions": [],
+      "probs": [],
+      "time_seconds": 0.11905813217163086,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "loss.",
+      "expected": "backward()",
+      "predictions": [
+        "losslosslossloss"
+      ],
+      "probs": [
+        0.00031816851718587466
+      ],
+      "time_seconds": 0.08375692367553711,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "optimizer.",
+      "expected": "step()",
+      "predictions": [
+        "param_groupssss"
+      ],
+      "probs": [
+        0.00017318027611245933
+      ],
+      "time_seconds": 0.1726067066192627,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "device = torch.device('cuda' if torch.cuda.is_available() else '",
+      "expected": "cpu",
+      "predictions": [
+        "cuda' if torch.",
+        "cpu' if torch.cuda",
+        "'' if torch.cuda",
+        "cuda') if torch",
+        "cuda') else 'cuda"
+      ],
+      "probs": [
+        0.683363832537007,
+        0.08418280499094803,
+        0.015906792381179723,
+        0.01534483041381184,
+        0.009202045682894563
+      ],
+      "time_seconds": 0.25100135803222656,
+      "top1_match": false,
+      "top5_match": true
+    },
+    {
+      "prompt": "with open('data.txt', '",
+      "expected": "r",
+      "predictions": [
+        "data.txt', 'data"
+      ],
+      "probs": [
+        0.30659746709879276
+      ],
+      "time_seconds": 0.16033482551574707,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "if __name__ == '__main__':\n    ",
+      "expected": "main()",
+      "predictions": [],
+      "probs": [],
+      "time_seconds": 0.08348989486694336,
+      "top1_match": false,
+      "top5_match": false
+    },
+    {
+      "prompt": "arr = np.array([1, 2, 3])\nprint(arr.",
+      "expected": "shape",
+      "predictions": [
+        "shape))\n\n# PROJECT",
+        "shape, np.array",
+        "shape, arr.shape",
+        "shape))\nprint(arr",
+        "shape, np.shape"
+      ],
+      "probs": [
+        0.013404632837244279,
+        0.01156098882237765,
+        0.009353566753152475,
+        0.007539364129793518,
+        0.0020598598863010805
+      ],
+      "time_seconds": 0.1623086929321289,
+      "top1_match": true,
+      "top5_match": true
+    },
+    {
+      "prompt": "df = pd.read_",
+      "expected": "csv",
+      "predictions": [],
+      "probs": [],
+      "time_seconds": 0.14952945709228516,
+      "top1_match": false,
+      "top5_match": false
+    }
+  ]
+}
