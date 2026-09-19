@@ -44,7 +44,13 @@ cd vscode_extension
 npm install # This will install the NPM packages
 ```
 
-4. Start the server `python_autocomplete/serve.py`
+4. Start the server. Run this from the repo root (not `python python_autocomplete/serve.py` directly,
+   which fails with `ModuleNotFoundError: No module named 'python_autocomplete'` since it doesn't put
+   the repo root on `sys.path`):
+
+```shell
+python -m python_autocomplete.serve
+```
 
 5. Open the extension project (folder) in [VSCode](https://code.visualstudio.com/)
 
@@ -60,6 +66,14 @@ start VSCode and open the project with `File > Open`
 
 ```
 Run > Start Debugging
+```
+
+On some setups (observed on Windows) this opens the Extension Development Host window and it
+immediately closes again, with no error shown. If that happens, launch it from a terminal instead,
+which reliably stays open:
+
+```shell
+code --extensionDevelopmentPath="<path-to-vscode_extension>" --new-window
 ```
 
 This will open another VSCode editor window, with the extension
